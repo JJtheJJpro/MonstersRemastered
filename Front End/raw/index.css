@@ -1,0 +1,118 @@
+@font-face {
+    font-family: IImpact;
+    src: url("./impact.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: IImpact;
+}
+
+html,
+body {
+    background-color: black;
+    color: red;
+}
+
+div#root {
+    display: flex;
+    flex-direction: column;
+}
+div.main {
+    text-align: center;
+    height: 20%;
+}
+div.interface {
+    height: 60%;
+}
+div.type {
+    height: 20%;
+}
+
+p {
+    width: auto;
+    height: auto;
+}
+p.title {
+    font-size: 70px;
+    padding: 40px;
+    padding-bottom: 0px;
+    -webkit-user-select: text;
+    user-select: text;
+}
+p.subtitle {
+    font-size: 30px;
+    padding: 10px;
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+table {
+    border: 2px solid red;
+}
+table.interface {
+    border-bottom: 0px solid red;
+}
+table.type {
+    border-top: 0px solid red;
+}
+
+td {
+    text-align: center;
+    border: 2px solid red;
+    font-size: 40px;
+}
+td.active {
+    color: black;
+    background-color: red;
+}
+td.interface {
+    width: 10%;
+    height: 21%;
+}
+td.type {
+    width: calc(100% / 3);
+    font-size: 60px;
+}
+td:hover {
+    background-color: #200000;
+}
+td.active:hover {
+    background-color: #c00000;
+}
+td:active,
+td.active:active {
+    background-color: #800000;
+}
+
+th {
+    text-align: center;
+    border: 2px solid red;
+    font-size: 40px;
+    font-weight: normal;
+}
+th.interface {
+    height: 16%;
+}
+th:hover {
+    background-color: #200000;
+}
+th:active {
+    background-color: #800000;
+}
+th.interface {
+    width: 10%;
+}
+
+tr.interface.h {
+    height: 16%;
+}
+tr.interface {
+    height: 21%;
+}
