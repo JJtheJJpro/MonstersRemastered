@@ -35,5 +35,7 @@
 #define Garbage(on) ((on && (PORTB & B10) == B10) || (!on && (PORTB & B10) == 0)) ? PORTB ^= B10 : PORTB = PORTB
 
 int main() {
+    init();
+    
     
 }
