@@ -8,4 +8,4 @@ This holds each different softwares to use, scripting and compiling, which commu
 - Console: Python, TypeScript (nodejs), Rust, C++ (for windows only),
 - Application: Tauri (offline), React
 
-Note, I might also go into C# Blazor for application, but really only if I feel like it.
+Not planned, but I also might go into C# Blazor for application.
