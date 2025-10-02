@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\VictorCapulet\\MonstersRemastered\\Console\\c#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E31C30B-C799-B3C0-BD31-B6888377430D}|c#.csproj|f:\\victorcapulet\\monstersremastered\\console\\c#\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E31C30B-C799-B3C0-BD31-B6888377430D}|c#.csproj|solutionrelative:frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E31C30B-C799-B3C0-BD31-B6888377430D}|c#.csproj|f:\\victorcapulet\\monstersremastered\\console\\c#\\backend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E31C30B-C799-B3C0-BD31-B6888377430D}|c#.csproj|solutionrelative:backend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E31C30B-C799-B3C0-BD31-B6888377430D}|c#.csproj|f:\\victorcapulet\\monstersremastered\\console\\c#\\handler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E31C30B-C799-B3C0-BD31-B6888377430D}|c#.csproj|solutionrelative:handler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frontend.cs",
+              "DocumentMoniker": "F:\\VictorCapulet\\MonstersRemastered\\Console\\c#\\Frontend.cs",
+              "RelativeDocumentMoniker": "Frontend.cs",
+              "ToolTip": "F:\\VictorCapulet\\MonstersRemastered\\Console\\c#\\Frontend.cs",
+              "RelativeToolTip": "Frontend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T04:18:37.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Handler.cs",
+              "DocumentMoniker": "F:\\VictorCapulet\\MonstersRemastered\\Console\\c#\\Handler.cs",
+              "RelativeDocumentMoniker": "Handler.cs",
+              "ToolTip": "F:\\VictorCapulet\\MonstersRemastered\\Console\\c#\\Handler.cs",
+              "RelativeToolTip": "Handler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwEwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T04:18:36.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Backend.cs",
+              "DocumentMoniker": "F:\\VictorCapulet\\MonstersRemastered\\Console\\c#\\Backend.cs",
+              "RelativeDocumentMoniker": "Backend.cs",
+              "ToolTip": "F:\\VictorCapulet\\MonstersRemastered\\Console\\c#\\Backend.cs",
+              "RelativeToolTip": "Backend.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAEwG0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T04:18:38.732Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

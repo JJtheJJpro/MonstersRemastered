@@ -9,6 +9,9 @@ import serial.serialutil
 import serial.tools.list_ports
 import threading
 
+print("WARNING: This program does suppress all key inputs even when not in focus.")
+print("Press ESC to exit")
+
 # For preventing the program to close until user presses ESC
 channel = queue.Queue(2)
 
@@ -50,6 +53,8 @@ def port_thread():
         while ser is not None:
             try:
                 r = ser.read()
+                if len(r) == 0:
+                    raise serial.serialutil.SerialException
                 print(f"{r[0]:b}")
                 if channel.unfinished_tasks == 1:
                     channel.put(None)
@@ -71,67 +76,67 @@ def parse_monster(key: str, down: bool):
     if ser is not None:
         df = 0b01000000 if down else 0b00000000
         match (key):
-            case '1':
+            case 'q':
                 ser.write([df | 1])
-            case '2':
+            case 'w':
                 ser.write([df | 2])
-            case '3':
+            case 'e':
                 ser.write([df | 3])
-            case '4':
+            case 'r':
                 ser.write([df | 4])
-            case '5':
+            case 't':
                 ser.write([df | 5])
-            case '6':
+            case 'y':
                 ser.write([df | 6])
-            case '7':
+            case 'u':
                 ser.write([df | 7])
-            case '8':
+            case 'i':
                 ser.write([df | 8])
-            case '9':
+            case 'o':
                 ser.write([df | 9])
-            case '0':
+            case 'p':
                 ser.write([df | 10])
 
-            case 'q':
+            case 'a':
                 ser.write([df | 11])
-            case 'w':
+            case 's':
                 ser.write([df | 12])
-            case 'e':
+            case 'd':
                 ser.write([df | 13])
-            case 'r':
+            case 'f':
                 ser.write([df | 14])
-            case 't':
+            case 'g':
                 ser.write([df | 15])
-            case 'y':
+            case 'h':
                 ser.write([df | 16])
-            case 'u':
+            case 'j':
                 ser.write([df | 17])
-            case 'i':
+            case 'k':
                 ser.write([df | 18])
-            case 'o':
+            case 'l':
                 ser.write([df | 19])
-            case 'p':
+            case ';':
                 ser.write([df | 20])
             
-            case 'a':
+            case 'z':
                 ser.write([df | 21])
-            case 's':
+            case 'x':
                 ser.write([df | 22])
-            case 'd':
+            case 'c':
                 ser.write([df | 23])
-            case 'f':
+            case 'v':
                 ser.write([df | 24])
-            case 'g':
+            case 'b':
                 ser.write([df | 25])
-            case 'h':
+            case 'n':
                 ser.write([df | 26])
-            case 'j':
+            case 'm':
                 ser.write([df | 27])
-            case 'k':
+            case ',':
                 ser.write([df | 28])
-            case 'l':
+            case '.':
                 ser.write([df | 29])
-            case ';':
+            case '/':
                 ser.write([df | 30])
 
             case 'space':
@@ -140,7 +145,7 @@ def parse_monster(key: str, down: bool):
                     df = 0b01000000 if door else 0b00000000
                     ser.write([df | 31])
                     print(f"\rdoor is {"open" if door else "shut"}", end='')
-            case '.':
+            case "'":
                 ser.write([df | 32])
 
             case _:
@@ -176,14 +181,11 @@ def on_key_release(event):
 unhook_press = keyboard.on_press(on_key_press, True)
 unhook_release = keyboard.on_release(on_key_release, True)
 
-print("WARNING: This program does suppress all key inputs even when not in focus.")
-print("Press ESC to exit")
-
 channel.get()
 unhook_press()
 unhook_release()
 if ser is not None:
     ser.write([0b10000000])
-    channel.get()
+    #channel.get()
 
 print("Exiting...")

@@ -1,118 +1,165 @@
-.logo.vite:hover {
-    filter: drop-shadow(0 0 2em #747bff);
-}
-
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafb);
-}
-
-:root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-
-    color: #0f0f0f;
-    background-color: #f6f6f6;
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-    margin: 0;
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+div.main {
     text-align: center;
+    height: 20%;
 }
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: 0.75s;
+div.interface {
+    height: 60%;
 }
 
-.logo.tauri:hover {
-    filter: drop-shadow(0 0 2em #24c8db);
+div.type {
+    height: 20%;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
+p {
+    width: auto;
+    height: auto;
 }
 
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
+p.title {
+    font-size: 70px;
+    padding: 40px;
+    padding-bottom: 0px;
+    -webkit-user-select: text;
+    user-select: text;
 }
 
-a:hover {
-    color: #535bf2;
+p.subtitle {
+    font-size: 30px;
+    padding: 10px;
+    -webkit-user-select: text;
+    user-select: text;
 }
 
-h1 {
+table {
+    border: 2px solid red;
+}
+
+table.interface {
+    border-bottom: 0px solid red;
+}
+
+table.type {
+    border-top: 0px solid red;
+}
+
+thead {
+    height: 16%;
+}
+
+tbody {
+    height: 84%;
+}
+
+tbody.t {
+    height: 100%;
+}
+
+td {
     text-align: center;
+    border: 2px solid red;
+    width: 10%;
+    height: 21%;
+    font-size: 40px;
 }
 
-input,
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    color: #0f0f0f;
-    background-color: #ffffff;
-    transition: border-color 0.25s;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+td.i {
+    color: red;
+    background-color: black;
 }
 
-button {
-    cursor: pointer;
+td.i:hover {
+    background-color: #200000;
 }
 
-button:hover {
-    border-color: #396cd8;
+td.i:active {
+    background-color: #800000;
 }
 
-button:active {
-    border-color: #396cd8;
-    background-color: #e8e8e8;
+td.t {
+    color: red;
+    background-color: black;
+    width: calc(100% / 3);
+    font-size: 60px;
 }
 
-input,
-button {
-    outline: none;
+td.t:hover {
+    background-color: #200000;
 }
 
-#greet-input {
-    margin-right: 5px;
+td.t:active {
+    background-color: #800000;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        color: #f6f6f6;
-        background-color: #2f2f2f;
-    }
+td.ia {
+    color: black;
+    background-color: red;
+}
 
-    a:hover {
-        color: #24c8db;
-    }
+td.ia:hover {
+    background-color: #c00000;
+}
 
-    input,
-    button {
-        color: #ffffff;
-        background-color: #0f0f0f98;
-    }
+td.ia:active {
+    background-color: #800000;
+}
 
-    button:active {
-        background-color: #0f0f0f69;
-    }
+td.ta {
+    color: black;
+    background-color: red;
+    width: calc(100% / 3);
+    font-size: 60px;
+}
+
+td.ta:hover {
+    background-color: #c00000;
+}
+
+td.ta:active {
+    background-color: #800000;
+}
+
+td.id,
+td.id:hover,
+td.id:active {
+    color: #800000;
+    background-color: black;
+}
+
+td.ida,
+td.ida:hover,
+td.ida:active {
+    color: #800000;
+    background-color: #500000;
+}
+
+th {
+    text-align: center;
+    border: 2px solid red;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+th.interface {
+    height: 16%;
+}
+
+th:hover {
+    background-color: #200000;
+}
+
+th:active {
+    background-color: #800000;
+}
+
+th.interface {
+    width: 10%;
+}
+
+tr.interface.h {
+    height: 16%;
+}
+
+tr.interface {
+    height: 21%;
 }

@@ -3,9 +3,18 @@ Every Halloween, my dad and I set up animatronic monsters to scare people when t
 
 This holds each different softwares to use, scripting and compiling, which communicates with an Arduino, which activates relays controlling where power and audio goes.
 
-## Proposed Languages to use:
-- Minimal: Python
-- Console: Python, TypeScript (nodejs), Rust, C++ (for windows only),
-- Application: Tauri (offline), React
+The folders "Front end" and "Back end" both hold the base of what is to happen in the UI and serial communication, respectively.
 
-Not planned, but I also might go into C# Blazor for application.
+**Python Minimal** - Done
+
+**Python Console** - Not initialized
+**Rust Console** - 85%
+**NodeJS Console** - Not initialized
+**C++ Console** - Not initialized
+**C# Console** - Not initialized
+
+**Tauri Host App** - 5%
+**Tauri Raw App** - Not initialized
+**React Web Host App** - Not initialized
+**React Web Raw App** - Not initialized
+**C# Blazor App** - Not initialized
